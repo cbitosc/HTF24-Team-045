@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Trustworthiness Score",
+  "version": "1.0",
+  "description": "Displays a trustworthiness score for websites.",
+  "permissions": ["activeTab", "scripting", "storage", "notifications"],
+  "host_permissions": [
+      "https://safebrowsing.googleapis.com/*",
+      "https://api.apilayer.com/*"
+  ],
+  "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+  },
+  "background": {
+      "service_worker": "background.js"
+  },
+  "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+  }
+}
