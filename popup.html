@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trustworthiness Score</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Trustworthiness Score</h1>
+    <div id="score">Loading...</div>
+    <div id="details">
+        <h2>Score Breakdown:</h2>
+        <ul>
+            <li>SSL Certificate: <span id="ssl-score"></span></li>
+            <li>Domain Reputation: <span id="reputation-score"></span></li>
+            <li>Domain Age: <span id="age-score"></span></li>
+        </ul>
+    </div>
+    <div>
+        <label for="threshold">Set Alert Threshold:</label>
+        <input type="number" id="threshold" min="0" max="100" step="1">
+        <button id="saveThreshold">Save</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
+
